@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +26,7 @@ SECRET_KEY = '%ks5uxxd7vfah5h2f7^_$-(wr^x&#!!01czqfdug-o9!24@gr)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -121,5 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-django_heroku.settings(locals())
+
 
